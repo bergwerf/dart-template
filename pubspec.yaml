@@ -1,0 +1,8 @@
+name:         dart-template
+version:      0.0.1
+author:       Herman Bergwerf <hermanbergwerf@gmail.com>
+description:  Default files when creating a new Dart repository
+homepage:     https://github.com/molview/dart-template
+environment:
+  sdk:        '>=1.8.0 <2.0.0'
+dependencies:
