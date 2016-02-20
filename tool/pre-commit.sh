@@ -5,3 +5,4 @@
 # that can be found in the LICENSE file.
 
 molviewfmt -c 'Herman Bergwerf' -l 'AGPL-3.0'
+make check
