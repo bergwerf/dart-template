@@ -2,7 +2,11 @@ analyzer:
   strong-mode: true
 linter:
   rules:
+
+  ##############
   # Error rules
+  ##############
+
   - avoid_empty_else
   - avoid_slow_async_io
   - cancel_subscriptions
@@ -22,7 +26,10 @@ linter:
   - unrelated_type_equality_checks
   - valid_regexps
 
+  ##############
   # Style rules
+  ##############
+
   - always_declare_return_types
   - always_put_control_body_on_new_line
   - always_require_non_null_named_parameters
@@ -39,17 +46,30 @@ linter:
   - avoid_function_literals_in_foreach_calls
   - avoid_init_to_null
   - avoid_null_checks_in_equality_operators
-  - avoid_positional_boolean_parameters
+
+  # Too restricting
+  #- avoid_positional_boolean_parameters
+
   - avoid_return_types_on_setters
   - avoid_returning_null
   - avoid_returning_this
   - avoid_setters_without_getters
-  - avoid_types_on_closure_parameters
+
+  # For convenience we might assume a certain type even if it is dynamic.
+  #- avoid_types_on_closure_parameters
+
   - await_only_futures
   - camel_case_types
-  - cascade_invocations
+  
+  # Cascade on constructor is ugly.
+  #- cascade_invocations
+
   - constant_identifier_names
-  - directives_ordering
+
+  # I prefer sorting blocks based on visual appearance (short to long)
+  # (I do sort import types in blocks)
+  #- directives_ordering
+
   - empty_catches
   - empty_constructor_bodies
   - implementation_imports
@@ -68,12 +88,18 @@ linter:
   - package_prefixed_library_names
   - parameter_assignments
   - prefer_adjacent_string_concatenation
-  - prefer_collection_literals
+
+  # I prefer using the class constructor to create empty instances.
+  #- prefer_collection_literals
+
   - prefer_conditional_assignment
   - prefer_const_constructors
   - prefer_constructors_over_static_methods
   - prefer_contains
-  - prefer_expression_function_bodies
+
+  # In some cases this simply looks ugly and less readably.
+  #- prefer_expression_function_bodies
+
   - prefer_final_fields
   - prefer_final_locals
   - prefer_foreach
@@ -109,5 +135,8 @@ linter:
   - use_string_buffers
   - use_to_and_as_if_applicable
 
+  ############
   # Pub rules
+  ############
+
   - package_names
