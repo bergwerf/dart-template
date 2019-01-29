@@ -54,12 +54,9 @@ Temporary Items
 # See https://www.dartlang.org/tools/private-files.html
 
 # Files and directories created by pub
-.buildlog
+.dart_tool/
 .packages
-.project
-.pub/
 build/
-packages
 
 # Files created by dart2js
 # (Most Dart developers will use pub build to compile Dart, use/modify these
