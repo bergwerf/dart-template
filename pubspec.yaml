@@ -4,4 +4,4 @@ author:       Herman Bergwerf <hermanbergwerf@gmail.com>
 description:  Default files for a new Dart repository
 homepage:     https://github.com/bergwerf/dart-template
 environment:
-  sdk:        '>=1.8.0 <2.0.0'
+  sdk:        '>=2.2.0 <3.0.0'
